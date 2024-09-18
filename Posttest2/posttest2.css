@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+table {
+    width: 70%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-collapse: collapse;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f8f8;
+    font-size: 1.1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+input[type="number"], input[type="date"], input[type="radio"] {
+    margin: 10px 0;
+}
+
+td input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+}
+
+input[type="radio"] {
+    margin: 0 10px;
+}
+
+.total, .tax, .grand-total {
+    font-weight: bold;
+}
+
+.total {
+    background-color: #dff0d8;
+}
+
+.tax {
+    background-color: #fcf8e3;
+}
+
+.grand-total {
+    background-color: #f2dede;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    img {
+        width: 80px;
+    }
+}
