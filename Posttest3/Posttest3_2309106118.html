@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="posttest3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <h2 style="color: white; font-family: 'Montserrat', sans-serif; font-weight: bold;">SKYLINE</h2>
+        <ul>
+            <li><a class="button" href="index.html">Home</a></li>
+            <li><a class="button" href="about.html">About</a></li>
+            <li><a class="button" href="contact.html">Contact</a></li>
+            <li><button id="theme-toggle" class="button">Switch to Dark Mode</button></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+        <div class="hero">
+            <h1>SKYLINE</h1>
+            <p>
+                Kami adalah vendor photo dan videography profesional di Samarinda yang siap membantu Anda mendokumentasikan setiap momen penting dalam hidup Anda. Dari pernikahan yang indah, pesta ulang tahun yang meriah, hingga berbagai acara spesial lainnya, kami hadir untuk menangkap setiap detail penuh kenangan.
+                Dengan tim yang berpengalaman dan peralatan berkualitas tinggi, kami berkomitmen memberikan hasil terbaik untuk setiap event yang Anda percayakan kepada kami. Biarkan kami mengabadikan momen-momen berharga Anda, sehingga Anda dapat menikmati dan mengenangnya sepanjang masa.
+           </p>
+           <br>
+           <p>
+            Hubungi kami untuk layanan dokumentasi pernikahan, ulang tahun, acara perusahaan, dan masih banyak lagi!
+           </p>
+            <a href="#" class="button">See More</a>
+        </div>
+        <img src="gambar/DSC00978.jpg" alt="azmy" width="20%">
+        <img src="gambar/DSC09582.jpg" alt="riski" width="20%">
+    </section>
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        let darkMode = false;
+
+        toggleButton.addEventListener('click', () => {
+            darkMode = !darkMode;
+            document.body.classList.toggle('dark-mode', darkMode);
+            toggleButton.textContent = darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+        });
+    </script>
+    <footer>
+        &copy; 2024 Copyright Skyline Photo & Cinema
+    </footer>
+</body>
+</html>
